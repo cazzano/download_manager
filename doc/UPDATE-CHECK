@@ -1,0 +1,20 @@
+When updating, change these files (if needed):
+
+- VERSION [0]
+- ChangeLog [1]
+- src/text.c (years in Copyright lines near EOF)
+- run: make update-po
+- commit changes
+- tag the release
+
+
+When done:
+
+- run: make relcheck
+- run: make distcheck
+- test Debian packaging
+- make a pull-request
+
+
+[0] $ scripts/mknextver
+[1] $ scripts/mkchangelog
